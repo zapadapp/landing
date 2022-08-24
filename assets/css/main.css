@@ -2505,7 +2505,46 @@ input, select, textarea {
 			input[type="button"].primary:active,
 			button.primary:active,
 			.button.primary:active {
-				background-color: #eb341c !important;
+				background-color: #306591 !important;
+			}
+
+		input[type="submit"].disabled, input[type="submit"]:disabled,
+		input[type="reset"].disabled,
+		input[type="reset"]:disabled,
+		input[type="button"].disabled,
+		input[type="button"]:disabled,
+		button.disabled,
+		button:disabled,
+		.button.disabled,
+		.button:disabled {
+			pointer-events: none;
+			opacity: 0.25;
+		}
+
+		input[type="submit"].secondary,
+		input[type="reset"].secondary,
+		input[type="button"].secondary,
+		button.secondary,
+		.button.secondary {
+			background-color: #00ffcc;
+			box-shadow: none !important;
+			color: #ffffff !important;
+		}
+
+			input[type="submit"].secondary:hover,
+			input[type="reset"].secondary:hover,
+			input[type="button"].secondary:hover,
+			button.secondary:hover,
+			.button.secondary:hover {
+				background-color: #00ffcc !important;
+			}
+
+			input[type="submit"].secondary:active,
+			input[type="reset"].secondary:active,
+			input[type="button"].secondary:active,
+			button.secondary:active,
+			.button.secondary:active {
+				background-color: #00ffcc !important;
 			}
 
 		input[type="submit"].disabled, input[type="submit"]:disabled,
